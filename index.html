@@ -1,21 +1,58 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Chatbot</title>
-    <link rel="stylesheet" href="style.css"> <!-- Link to CSS file -->
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Creative Web Studio</title>
+  <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
- <img src="bolalalogo.png" alt="Chatbot Logo" class="admin-logo">
-    <div class="chat-container">
-        <div class="chat-box" id="chat-box">
-            <div class="chat-message bot">Hello! Koman mwen ka fout edew?</div>
-        </div>
-        <input type="text" id="user-input" placeholder="Type a message..." onkeypress="handleKeyPress(event)">
-        <button onclick="sendMessage()">Send</button>
+  <header>
+    <div class="logo">KEBYMAGE</div>
+    <nav>
+      <ul>
+        <li><a href="#hero">Home</a></li>
+        <li><a href="#services">Services</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section id="hero">
+    <h1>We Build Beautiful Websites</h1>
+    <p>Professional web design for your business</p>
+    <button onclick="scrollToContact()">Get in Touch</button>
+  </section>
+
+  <section id="services">
+    <h2>Our Services</h2>
+    <div class="service-list">
+      <div class="service">Responsive Web Design</div>
+      <div class="service">E-commerce Development</div>
+      <div class="service">Brand Identity</div>
     </div>
-	<a href="contact.html" class="contact-link"> Ekri nou</a>
-    <script src="script.js"></script> <!-- Link to JavaScript file -->
+  </section>
+
+  <section id="about">
+    <h2>About Us</h2>
+    <p>We are a team of creative designers and developers helping businesses grow online.</p>
+  </section>
+
+  <section id="contact">
+    <h2>Contact Us</h2>
+    <form id="contact-form">
+      <input type="text" placeholder="Your Name" required />
+      <input type="email" placeholder="Your Email" required />
+      <textarea placeholder="Your Message" required></textarea>
+      <button type="submit">Send Message</button>
+    </form>
+  </section>
+
+  <footer>
+    <p>© 2025 KEBYMAGE LLC. All rights reserved.</p>
+  </footer>
+
+  <script src="script.js"></script>
 </body>
 </html>
