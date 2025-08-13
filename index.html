@@ -1,58 +1,241 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>KEBYMAGE</title>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>kebymage — Home</title>
+  <meta name="description" content="Photography, Videography, Web Design, Graphic Design, and Online Store" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
   <header>
-    <div class="logo">KEBYMAGE</div>
-    <nav>
-      <ul>
-        <li><a href="#hero">Home</a></li>
-        <li><a href="#services">Services</a></li>
-        <li><a href="#about">About</a></li>
-        <li><a href="#contact">Contact</a></li>
-      </ul>
-    </nav>
+    <div class="container nav">
+      <div class="brand">
+        <div class="logo" aria-hidden="true"></div>
+        <h1>kebymage</h1>
+      </div>
+      <nav class="menu" aria-label="Primary">
+        <a href="index.html">Home</a>
+        <a href="photography.html">Photography</a>
+        <a href="videography.html">Videography</a>
+        <a href="web-design.html">Web Design</a>
+        <a href="graphic-design.html">Graphic Design</a>
+        <a href="store.html">Store</a>
+        <a href="index.html#about">About</a>
+        <a href="index.html#blog">Blog</a>
+        <a href="index.html#contact" class="cta">Get a Quote</a>
+      </nav>
+    </div>
   </header>
 
-  <section id="hero">
-    <h1>We Build Beautiful Websites</h1>
-    <p>Professional web design for your business</p>
-    <button onclick="scrollToContact()">Get in Touch</button>
-  </section>
+  <main>
+    <!-- HERO -->
+    <section class="container hero" id="home">
+      <div>
+        <div class="badge"><span>📸🎬🖥️🎨</span> Your one‑stop creative studio</div>
+        <h2>Photography, Videography, Web & Graphic Design — plus an online store for your brand assets.</h2>
+        <p>We help businesses and individuals look their best—on camera, on the web, and in print. Book a session, brief a project, or shop ready‑made assets.</p>
+        <div class="actions">
+          <a class="btn primary" href="photography.html">Explore Services</a>
+          <a class="btn" href="#portfolio">See Work</a>
+          <button class="btn" id="openBook">Check Availability</button>
+        </div>
+      </div>
+      <aside class="hero-card">
+        <div class="hero-grid" aria-label="Highlights">
+          <img alt="Portrait session" src="https://images.unsplash.com/photo-1520975916090-3105956dac38?q=80&w=800&auto=format&fit=crop"/>
+          <img alt="Wedding video" src="https://images.unsplash.com/photo-1519741497674-611481863552?q=80&w=800&auto=format&fit=crop"/>
+          <img alt="Web design UI" src="https://images.unsplash.com/photo-1529101091764-c3526daf38fe?q=80&w=800&auto=format&fit=crop"/>
+          <img alt="Graphic poster" src="https://images.unsplash.com/photo-1517694712202-14dd9538aa97?q=80&w=800&auto=format&fit=crop"/>
+        </div>
+      </aside>
+    </section>
 
-  <section id="services">
-    <h2>Our Services</h2>
-    <div class="service-list">
-      <div class="service">Responsive Web Design</div>
-      <div class="service">E-commerce Development</div>
-      <div class="service">Brand Identity</div>
-    </div>
-  </section>
+    <!-- SERVICES OVERVIEW (links to separate pages) -->
+    <section id="services">
+      <div class="container">
+        <div class="section-head">
+          <div>
+            <h3>Services</h3>
+            <div class="sub">Each service has its own page with details, packages, and samples.</div>
+          </div>
+          <a class="btn" href="#contact">Request a Quote</a>
+        </div>
+        <div class="cards" role="list">
+          <article class="card" role="listitem">
+            <div class="media"><img alt="Photography" src="https://images.unsplash.com/photo-1487412912498-0447578fcca8?q=80&w=1600&auto=format&fit=crop"></div>
+            <div class="body">
+              <span class="pill">Photography</span>
+              <h4>Weddings • Portraits • Commercial</h4>
+              <p>From intimate moments to brand campaigns. Color‑true, flattering, ready for print and web.</p>
+            </div>
+            <div class="foot"><a class="btn" href="photography.html">View Page</a><button class="btn" data-book="Photography">Book</button></div>
+          </article>
+          <article class="card" role="listitem">
+            <div class="media"><img alt="Videography" src="https://images.unsplash.com/photo-1485846234645-a62644f84728?q=80&w=1600&auto=format&fit=crop"></div>
+            <div class="body">
+              <span class="pill">Videography</span>
+              <h4>Events • Promo • Social • Drone</h4>
+              <p>Cinematic storytelling, crisp audio, delivered in formats for every platform.</p>
+            </div>
+            <div class="foot"><a class="btn" href="videography.html">View Page</a><button class="btn" data-book="Videography">Book</button></div>
+          </article>
+          <article class="card" role="listitem">
+            <div class="media"><img alt="Web Design" src="https://images.unsplash.com/photo-1516259762381-22954d7d3ad2?q=80&w=1600&auto=format&fit=crop"></div>
+            <div class="body">
+              <span class="pill">Web Design</span>
+              <h4>Business • E‑commerce • Maintenance</h4>
+              <p>High‑performing sites with clean UI, SEO foundations, and easy editing.</p>
+            </div>
+            <div class="foot"><a class="btn" href="web-design.html">View Page</a><button class="btn" data-book="Web Design">Get Quote</button></div>
+          </article>
+          <article class="card" role="listitem">
+            <div class="media"><img alt="Graphic Design" src="https://images.unsplash.com/photo-1529107386315-e1a2ed48a620?q=80&w=1600&auto=format&fit=crop"></div>
+            <div class="body">
+              <span class="pill">Graphic Design</span>
+              <h4>Branding • Print • Social • Packaging</h4>
+              <p>Identity systems and marketing assets that scale across mediums.</p>
+            </div>
+            <div class="foot"><a class="btn" href="graphic-design.html">View Page</a><button class="btn" data-book="Graphic Design">Start</button></div>
+          </article>
+        </div>
+      </div>
+    </section>
 
-  <section id="about">
-    <h2>About Us</h2>
-    <p>We are a team of creative designers and developers helping businesses grow online.</p>
-  </section>
+    <!-- PORTFOLIO -->
+    <section id="portfolio">
+      <div class="container">
+        <div class="section-head">
+          <div>
+            <h3>Portfolio</h3>
+            <div class="sub">Filter by service to find relevant work.</div>
+          </div>
+          <div class="filters" role="tablist" aria-label="Portfolio filters">
+            <button class="active" data-cat="all" role="tab">All</button>
+            <button data-cat="photo" role="tab">Photography</button>
+            <button data-cat="video" role="tab">Videography</button>
+            <button data-cat="web" role="tab">Web Design</button>
+            <button data-cat="graphic" role="tab">Graphic Design</button>
+          </div>
+        </div>
+        <div class="grid" id="portfolioGrid"></div>
+      </div>
+    </section>
 
-  <section id="contact">
-    <h2>Contact Us</h2>
-    <form id="contact-form">
-      <input type="text" placeholder="Your Name" required />
-      <input type="email" placeholder="Your Email" required />
-      <textarea placeholder="Your Message" required></textarea>
-      <button type="submit">Send Message</button>
-    </form>
-  </section>
+    <!-- TESTIMONIALS -->
+    <section id="testimonials">
+      <div class="container">
+        <div class="section-head">
+          <h3>Happy Clients</h3>
+          <div class="sub">What people say about working with us.</div>
+        </div>
+        <div class="quotes" id="quotes"></div>
+      </div>
+    </section>
+
+    <!-- ABOUT -->
+    <section id="about">
+      <div class="container">
+        <div class="section-head">
+          <h3>About Us</h3>
+          <div class="sub">Mission‑driven. Detail‑obsessed. People‑first.</div>
+        </div>
+        <div class="about">
+          <div>
+            <p>We combine production craftsmanship with modern design to deliver end‑to‑end creative outcomes—from the first moodboard to the final deliverable.</p>
+            <ul>
+              <li>⚡ Fast, reliable turnarounds</li>
+              <li>🧪 Tested workflows for color, audio, and accessibility</li>
+              <li>🤝 Clear communication with milestone approvals</li>
+            </ul>
+          </div>
+          <div>
+            <div class="team" id="team"></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- BLOG -->
+    <section id="blog">
+      <div class="container">
+        <div class="section-head">
+          <h3>From the Blog</h3>
+          <div class="sub">Tips, case studies, and behind‑the‑scenes.</div>
+        </div>
+        <div class="blog" id="blogGrid"></div>
+      </div>
+    </section>
+
+    <!-- CONTACT / BOOK -->
+    <section id="contact">
+      <div class="container">
+        <div class="section-head">
+          <h3>Contact & Booking</h3>
+          <div class="sub">Tell us about your project. We reply within 1 business day.</div>
+        </div>
+        <form id="contactForm" name="contact" method="POST" action="https://formspree.io/f/YOUR_FORMSPREE_ID" data-netlify="true" netlify-honeypot="bot-field" novalidate>
+          <input type="hidden" name="form-name" value="contact">
+          <input type="text" name="bot-field" style="position:absolute;left:-9999px" tabindex="-1" autocomplete="off">
+          <div>
+            <label for="name">Name</label>
+            <input id="name" name="name" required placeholder="Your full name" />
+          </div>
+          <div>
+            <label for="email">Email</label>
+            <input id="email" name="email" type="email" required placeholder="you@example.com" />
+          </div>
+          <div>
+            <label for="service">Service</label>
+            <select id="service" name="service" required>
+              <option value="">Select a service…</option>
+              <option>Photography</option>
+              <option>Videography</option>
+              <option>Web Design</option>
+              <option>Graphic Design</option>
+            </select>
+          </div>
+          <div>
+            <label for="budget">Budget</label>
+            <select id="budget" name="budget">
+              <option>Under $500</option>
+              <option>$500–$1500</option>
+              <option>$1500–$5000</option>
+              <option>$5000+</option>
+            </select>
+          </div>
+          <div class="full">
+            <label for="message">Project details</label>
+            <textarea id="message" name="message" placeholder="Goals, timeline, references…"></textarea>
+          </div>
+          <div class="full">
+            <button class="btn primary" type="submit">Send Request</button>
+            <span class="notice" id="formNote" role="status" aria-live="polite"></span>
+          </div>
+        </form>
+        <aside style="margin-top:16px" class="sub">
+          Prefer direct contact? Email <a href="mailto:kebymage@gmail.com">kebymage@gmail.com</a> · Call <a href="tel:5617293871">561&nbsp;729&nbsp;3871</a> · Visit <a href="https://www.kebymage.com" target="_blank" rel="noopener">www.kebymage.com</a>
+        </aside>
+      </div>
+    </section>
+  </main>
 
   <footer>
-    <p>© 2025 KEBYMAGE LLC. All rights reserved.</p>
+    <div class="container">© <span id="year"></span> kebymage • <a href="mailto:kebymage@gmail.com">kebymage@gmail.com</a> • <a href="tel:5617293871">561&nbsp;729&nbsp;3871</a> • <a href="https://www.kebymage.com" target="_blank" rel="noopener">kebymage.com</a> • <a href="#">Privacy</a> • <a href="#">Terms</a></div>
   </footer>
 
-  <script src="script.js"></script>
+  <!-- Booking Modal -->
+  <dialog id="bookModal" aria-label="Book a session">
+    <div class="modal-head"><strong>Check Availability</strong><button class="btn" id="closeBook">Close</button></div>
+    <div class="modal-body">
+      <p class="sub">Connect your scheduler here. For demo purposes, this is a placeholder calendar.</p>
+      <iframe title="Calendar" style="width:100%;height:420px;border:1px solid #242742;border-radius:12px" srcdoc="<style>body{font:16px system-ui;margin:0;padding:16px;color:#222}</style><h2>Pick a time</h2><p>Mon–Fri: 10:00, 13:00, 16:00</p>"></iframe>
+    </div>
+  </dialog>
+
+  <script defer src="app.js"></script>
 </body>
 </html>

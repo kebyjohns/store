@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>kebymage — Store</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header>
+    <div class="container nav">
+      <div class="brand"><div class="logo"></div><h1>kebymage</h1></div>
+      <nav class="menu" aria-label="Primary">
+        <a href="index.html">Home</a>
+        <a href="photography.html">Photography</a>
+        <a href="videography.html">Videography</a>
+        <a href="web-design.html">Web Design</a>
+        <a href="graphic-design.html">Graphic Design</a>
+        <a href="store.html">Store</a>
+        <a href="index.html#contact" class="cta">Get a Quote</a>
+      </nav>
+    </div>
+  </header>
+  <main>
+    <section id="store">
+      <div class="container">
+        <div class="section-head">
+          <div>
+            <h3>Store</h3>
+            <div class="sub">Haitian pride merch, prints, templates & more</div>
+          </div>
+          <button class="btn" id="openCart">Cart (<span id="cartCount">0</span>)</button>
+        </div>
+        <div class="store" id="storeGrid"></div>
+      </div>
+    </section>
+  </main>
+  <footer><div class="container">© <span id="year"></span> kebymage • <a href="mailto:kebymage@gmail.com">kebymage@gmail.com</a> • <a href="tel:5617293871">561‑729‑3871</a></div></footer>
+
+  <!-- Cart Modal -->
+  <dialog id="cartModal" aria-label="Shopping cart">
+    <div class="modal-head"><strong>Your Cart</strong><button class="btn" id="closeCart">Close</button></div>
+    <div class="modal-body">
+      <div id="cartItems" class="sub">Your cart is empty.</div>
+      <div style="display:flex;justify-content:space-between;align-items:center;margin-top:12px">
+        <strong>Total: $<span id="cartTotal">0.00</span></strong>
+        <button class="btn primary" id="checkoutBtn">Checkout</button>
+      </div>
+      <div id="paypalWrap" style="margin-top:12px;display:none">
+        <div id="paypal-button-container"></div>
+      </div>
+      <p class="sub">Pay securely via PayPal (replace client ID below to enable).</p>
+    </div>
+  </dialog>
+
+  <script src="https://www.paypal.com/sdk/js?client-id=YOUR_PAYPAL_CLIENT_ID&currency=USD"></script>
+  <script defer src="app.js"></script>
+</body>
+</html>

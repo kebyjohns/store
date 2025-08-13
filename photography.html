@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>kebymage — Photography</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header>
+    <div class="container nav">
+      <div class="brand"><div class="logo"></div><h1>kebymage</h1></div>
+      <nav class="menu" aria-label="Primary">
+        <a href="index.html">Home</a>
+        <a href="photography.html">Photography</a>
+        <a href="videography.html">Videography</a>
+        <a href="web-design.html">Web Design</a>
+        <a href="graphic-design.html">Graphic Design</a>
+        <a href="store.html">Store</a>
+        <a href="index.html#contact" class="cta">Get a Quote</a>
+      </nav>
+    </div>
+  </header>
+  <main>
+    <section class="container hero">
+      <div>
+        <div class="badge">📸 Photography</div>
+        <h2>Portraits, Weddings, Events & Commercial</h2>
+        <p>Color‑true editing, flattering light, and delivery ready for print and web.</p>
+        <div class="actions"><a class="btn primary" href="index.html#contact">Request Pricing</a></div>
+      </div>
+      <aside class="hero-card">
+        <div class="hero-grid">
+          <img alt="Portrait" src="https://images.unsplash.com/photo-1511285560929-80b456fea0bc?q=80&w=800&auto=format&fit=crop">
+          <img alt="Wedding" src="https://images.unsplash.com/photo-1519741497674-611481863552?q=80&w=800&auto=format&fit=crop">
+          <img alt="Studio" src="https://images.unsplash.com/photo-1487412912498-0447578fcca8?q=80&w=800&auto=format&fit=crop">
+          <img alt="Brand" src="https://images.unsplash.com/photo-1491553895911-0055eca6402d?q=80&w=800&auto=format&fit=crop">
+        </div>
+      </aside>
+    </section>
+    <section>
+      <div class="container">
+        <div class="section-head"><h3>Packages</h3><div class="sub">Popular options — customize on request.</div></div>
+        <div class="cards">
+          <article class="card"><div class="body"><span class="pill">Portrait</span><h4>Essential</h4><p>60 minutes, 1 location, 15 edits.</p></div><div class="foot"><a class="btn" href="index.html#contact">Book</a></div></article>
+          <article class="card"><div class="body"><span class="pill">Wedding</span><h4>Classic</h4><p>6 hours coverage, highlight gallery.</p></div><div class="foot"><a class="btn" href="index.html#contact">Book</a></div></article>
+          <article class="card"><div class="body"><span class="pill">Brand</span><h4>Commercial</h4><p>Half‑day production, usage license.</p></div><div class="foot"><a class="btn" href="index.html#contact">Book</a></div></article>
+        </div>
+      </div>
+    </section>
+    <section>
+      <div class="container">
+        <div class="section-head"><h3>Gallery</h3><div class="sub">Recent shots</div></div>
+        <div class="grid" id="portfolioGrid"></div>
+      </div>
+    </section>
+  </main>
+  <footer><div class="container">© <span id="year"></span> kebymage • <a href="mailto:kebymage@gmail.com">kebymage@gmail.com</a> • <a href="tel:5617293871">561‑729‑3871</a></div></footer>
+  <script defer src="app.js"></script>
+</body>
+</html>
